@@ -1,0 +1,96 @@
+.skillsDiv > h2 {
+    text-align: center;
+    margin-top: -65px;
+    margin-bottom: -40px;
+    padding-top: 85px;
+}
+
+.skills {
+    border: maroon solid 5px;
+    display: flex;
+    padding: 40px 100px;
+    margin: 60px;
+    justify-content: space-evenly;
+    font-size: 16px;
+    min-height: 300px;
+}
+
+.frontAndBack {
+    box-sizing: border-box;
+    border: green solid 4px;
+    min-width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.skills h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.tools {
+    border: blue solid 5px;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.front, .back {
+    border: darkmagenta solid 5px;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+
+.frontList, .backList {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    border: #00B381 solid 2px;
+    text-align: center;
+}
+
+.listAndPhoto {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+}
+
+.frontList div, .backList div {
+    padding: 0 6px;
+}
+
+.imgFrontBack {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redux, .node {
+    width: 70%;
+}
+
+.linux {
+    width: 200px;
+}
+
+.tools .listAndPhoto {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: #00B381 solid 2px;
+    align-items: center;
+}
+
+.tools .listAndPhoto div {
+    box-sizing: border-box;
+    width: 100%;
+    border: red solid 2px;
+    text-align: center;
+    margin: 1px 0;
+}

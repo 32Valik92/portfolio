@@ -1,0 +1,11 @@
+export { default as forestImg } from './images/forest.jpg';
+export { default as linuxImg } from './images/linux.png';
+export { default as meImg } from './images/me.png';
+export { default as me2Img } from './images/me2.png';
+export { default as movie1Img } from './images/movie1.png';
+export { default as movie2Img } from './images/movie2.png';
+export { default as movie3Img } from './images/movie3.png';
+export { default as movie4Img } from './images/movie4.png';
+export { default as movie5Img } from './images/movie5.png';
+export { default as nodeImg } from './images/node.png';
+export { default as reduxImg } from './images/redux.png';

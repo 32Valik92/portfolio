@@ -6,7 +6,7 @@ module.exports = {
    'extends': [
       'eslint:recommended',
       'plugin:@typescript-eslint/recommended',
-      'plugin:react/recommended'
+      'plugin:react/recommended',
    ],
    'overrides': [
       {
@@ -39,6 +39,5 @@ module.exports = {
       'no-console': 'off', // Дозволити використання console.log
       'simple-import-sort/imports': 'error', // Сортування import
       'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1, maxBOF: 0 }], // Між блоками максимум 2 рядки порожніх
-
    }
 };

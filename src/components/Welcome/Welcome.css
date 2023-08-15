@@ -1,0 +1,44 @@
+.welcome{
+    margin-top: 65px;
+    height: calc(100vh - 65px);
+    background-color: #141612;
+}
+
+h1 {
+    color: silver;
+    font-size: 120px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+}
+
+h1::before {
+    content: attr(content);
+    position: absolute;
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    color: white;
+    animation: move 5s linear infinite; /* Function for change color */
+    filter: drop-shadow(0 0 20px #00B381) drop-shadow(0 0 30px #00B381);
+}
+
+/* Function for draw our 'WELCOME' */
+@keyframes move {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+
+}
+
+.welcomeImg {
+    margin-top: 40px;
+    width: 450px;
+    margin-left: 55%;
+    border-radius: 50%;
+}

@@ -2,15 +2,25 @@ import './MainInfo.css';
 
 import React, {FC} from 'react';
 
-import me from '../../assets/images/me.png';
+import {movieDB} from '../../constants';
+import {AboutMe} from '../AboutMe/AboutMe';
+import {Phrase} from '../Phrase/Phrase';
+import {Projects} from '../Projects/Projects';
+import {Skills} from '../Skills/Skills';
+import {Welcome} from '../Welcome/Welcome';
+
 
 const MainInfo: FC = () => {
    return (
-      <div>
-         <h1 content={'WELCOME'}>
-                WELCOME
-         </h1>
-         <img src={me} alt="Valentyn Strukalo"/>
+      <div className={'main'}>
+         <Welcome/>
+         <AboutMe/>
+         <Skills/>
+         <Phrase/>
+         <div className={'projects'}>
+            <h2 id={'projects'}>Projects</h2>
+            <Projects projectInfo={movieDB} key={1}/>
+         </div>
       </div>
    );
 };

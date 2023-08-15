@@ -1,6 +1,15 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #141612;
+    z-index: 1000;
+}
+
 .headerMenu {
+    position: relative;
     display: flex;
-    background-color: #003049;
     box-sizing: border-box;
     font-family: Arial, serif;
     font-weight: bold;
@@ -41,6 +50,11 @@
     padding: 0 10%;
 }
 
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
 .menu div {
     width: 50%;
     text-align: center;
@@ -50,7 +64,6 @@
 .menu div:hover {
     filter: drop-shadow(0 0 20px #00ffffff) drop-shadow(0 0 30px #00ffffff);
 }
-
 
 .headerMenu ul {
     width: 20%;
