@@ -4,6 +4,7 @@ import React, {FC} from 'react';
 
 import {movieDB} from '../../constants';
 import {AboutMe} from '../AboutMe/AboutMe';
+import {ContactForm} from '../ContactForm/ContactForm';
 import {Phrase} from '../Phrase/Phrase';
 import {Projects} from '../Projects/Projects';
 import {Skills} from '../Skills/Skills';
@@ -21,6 +22,7 @@ const MainInfo: FC = () => {
             <h2 id={'projects'}>Projects</h2>
             <Projects projectInfo={movieDB} key={1}/>
          </div>
+         <ContactForm/>
       </div>
    );
 };

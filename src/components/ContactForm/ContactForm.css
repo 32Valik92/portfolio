@@ -1,0 +1,24 @@
+.contactFormDiv {
+    border: blue solid 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    margin: 60px;
+}
+
+.contactFormDiv > h2 {
+    text-align: center;
+}
+
+.form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formButton {
+    display: flex;
+    justify-content: center;
+}
