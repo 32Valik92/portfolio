@@ -1,7 +1,7 @@
-.welcome{
+.welcome {
     margin-top: 65px;
     height: calc(100vh - 65px);
-    background-color: #141612;
+    background-color: black;
 }
 
 h1 {
@@ -10,7 +10,8 @@ h1 {
     position: absolute;
     top: 35%;
     left: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: Algerian, serif;
 }
 
 h1::before {
@@ -22,7 +23,7 @@ h1::before {
     border-right: 3px solid white;
     color: white;
     animation: move 5s linear infinite; /* Function for change color */
-    filter: drop-shadow(0 0 20px #00B381) drop-shadow(0 0 30px #00B381);
+    filter: drop-shadow(0 0 20px #FFFFFF) drop-shadow(0 0 30px #FFFFFF);
 }
 
 /* Function for draw our 'WELCOME' */
@@ -33,12 +34,14 @@ h1::before {
     100% {
         width: 100%;
     }
-
 }
 
-.welcomeImg {
-    margin-top: 40px;
-    width: 450px;
-    margin-left: 55%;
-    border-radius: 50%;
+/* ------------------------- @media ------------------------- */
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+
+    h1 {
+        font-size: 70px;
+    }
+
 }

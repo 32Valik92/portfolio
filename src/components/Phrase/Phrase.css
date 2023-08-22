@@ -1,8 +1,35 @@
-.phrase{
-    border: maroon solid 5px;
+.phrase {
+    box-sizing: border-box;
     padding: 40px 100px;
     margin: 60px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
     font-size: 35px;
     text-align: center;
+    background-color: black;
+    font-family: "Book Antiqua", serif;
+    background-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3),
+    rgba(0, 0, 0, 0.4)
+    );
+}
 
+/* ------------------------- @media ------------------------- */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .phrase {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+
+    .phrase {
+        font-size: 25px;
+        margin: 30px 10px;
+        padding: 20px;
+    }
 }

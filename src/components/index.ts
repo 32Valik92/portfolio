@@ -7,6 +7,6 @@ export * from './HeaderLogo/HeaderLogo';
 export * from './HeaderMenu/HeaderMenu';
 export * from './MainInfo/MainInfo';
 export * from './Phrase/Phrase';
-export * from './Projects/Projects';
+export * from './ProjectsTemplate/ProjectsTemplate';
 export * from './Skills/Skills';
 export * from './Welcome/Welcome';

@@ -5,18 +5,22 @@
     width: 100%;
     background-color: #141612;
     z-index: 1000;
+    font-family: "Book Antiqua", serif;
+    box-sizing: border-box;
 }
 
 .headerMenu {
-    position: relative;
     display: flex;
     box-sizing: border-box;
-    font-family: Arial, serif;
     font-weight: bold;
-    color: white;
+    height: 65px;
     font-size: 24px;
     padding: 0 5%;
-    height: 65px;
+    color: white;
+}
+
+.mediaMenu {
+    display: none; /* hidden object */
 }
 
 .logo {
@@ -38,7 +42,7 @@
     background-color: white;
     aspect-ratio: 1/1; /* Fixed aspect ratio 1:1 */
     border-radius: 10px;
-    color: #003049;
+    color: black;
 }
 
 .menu {
@@ -62,7 +66,7 @@
 }
 
 .menu div:hover {
-    filter: drop-shadow(0 0 20px #00ffffff) drop-shadow(0 0 30px #00ffffff);
+    filter: drop-shadow(0 0 20px #FFFFFF) drop-shadow(0 0 30px #FFFFFF);
 }
 
 .headerMenu ul {
@@ -84,13 +88,138 @@
     height: 34px;
     width: 34px;
     text-decoration: none;
-    color: #003049;
+    color: black;
     border-radius: 50%;
     background-color: white;
 }
 
 .headerMenu ul li a:hover {
-    filter: drop-shadow(0 0 20px #00ffffff) drop-shadow(0 0 30px #00ffffff);
+    filter: drop-shadow(0 0 20px #FFFFFF) drop-shadow(0 0 30px #FFFFFF);
 }
 
+.mediaMenu button {
+    display: inline-block;
+    font-family: "Book Antiqua", serif;
+    padding: 5px 10px;
+    background-color: #00008B;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
 
+/* ------------------------- @media ------------------------- */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .headerMenu {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .mediaMenu {
+        display: flex; /* Об'єкт відображається при ширині екрану менше 768px */
+        align-items: center;
+        justify-content: right;
+        width: 80%;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        background-color: black;
+        position: absolute;
+    }
+
+    .menu.show, .linksList.show {
+        animation: dropdownAnimation 2s ease forwards;
+        height: 50px;
+    }
+
+    @keyframes dropdownAnimation {
+        from {
+            max-height: 0;
+        }
+        to {
+            max-height: 500px;
+        }
+    }
+
+    .headerMenu ul {
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+        top: 115px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        justify-content: space-evenly;
+        background-color: black;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+
+    .mediaMenu {
+        display: flex; /* Об'єкт відображається при ширині екрану менше 768px */
+        justify-content: right;
+        align-items: center;
+        width: 80%;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        background-color: black;
+        position: absolute;
+    }
+
+    .headerMenu {
+        font-size: 20px;
+    }
+
+    .menu.show, .linksList.show {
+        animation: dropdownAnimation 2s ease forwards;
+        height: 50px;
+    }
+
+    @keyframes dropdownAnimation {
+        from {
+            max-height: 0;
+        }
+        to {
+            max-height: 500px;
+        }
+    }
+
+    .headerMenu ul {
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+        top: 115px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        justify-content: space-evenly;
+        background-color: black;
+        position: absolute;
+    }
+}

@@ -1,15 +1,18 @@
 .contactFormDiv {
-    border: blue solid 3px;
+    /*border: blue solid 3px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 100px;
-    margin: 60px;
+    background-color: #141612;
+    height: calc(100vh - 125px);
 }
 
 .contactFormDiv > h2 {
     text-align: center;
+    font-family: "Book Antiqua", serif;
+
 }
 
 .form div {
@@ -21,4 +24,74 @@
 .formButton {
     display: flex;
     justify-content: center;
+}
+
+/* --------------------------------------- FORM --------------------------------------- */
+
+.form {
+    width: 500px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    background: #191919;
+    text-align: center;
+}
+
+.form h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form input[type = 'text'], .textarea {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    transition: 0.25s;
+}
+
+.textarea {
+    height: 100px;
+}
+
+.form input[type = 'text']:focus, .textarea:focus {
+    border: 2px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.buttonGit button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+    box-shadow: 0 0 0 white;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+.errorsText {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.answerText {
+    font-family: Algerian, serif;
+    color: #FFFFFF;
+}
+
+/* ------------------------- @media ------------------------- */
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+
+    .form {
+        width: 300px;
+
+    }
 }

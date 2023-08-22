@@ -6,7 +6,7 @@ import {movieDB} from '../../constants';
 import {AboutMe} from '../AboutMe/AboutMe';
 import {ContactForm} from '../ContactForm/ContactForm';
 import {Phrase} from '../Phrase/Phrase';
-import {Projects} from '../Projects/Projects';
+import {ProjectsTemplate} from '../ProjectsTemplate/ProjectsTemplate';
 import {Skills} from '../Skills/Skills';
 import {Welcome} from '../Welcome/Welcome';
 
@@ -19,8 +19,8 @@ const MainInfo: FC = () => {
          <Skills/>
          <Phrase/>
          <div className={'projects'}>
-            <h2 id={'projects'}>Projects</h2>
-            <Projects projectInfo={movieDB} key={1}/>
+            <h2 id={'projects'}>PROJECTS</h2>
+            <ProjectsTemplate projectInfo={movieDB} key={1}/>
          </div>
          <ContactForm/>
       </div>

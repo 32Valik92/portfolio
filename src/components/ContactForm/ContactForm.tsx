@@ -33,7 +33,7 @@ const ContactForm: FC = () => {
       if (submitStatus) {
          const timeoutId = setTimeout(() => {
             setSubmitStatus(false);
-         }, 10000);
+         }, 5000);
 
          return () => clearTimeout(timeoutId); // Reset timer after change
       }
@@ -41,8 +41,8 @@ const ContactForm: FC = () => {
 
    return (
       <div className="contactFormDiv">
-         <h2>Contact Me</h2>
-         <form onSubmit={handleSubmit(sendEmail)} className={'form'}>
+         <h2>CONTACT ME</h2>
+         <form onSubmit={handleSubmit(sendEmail)} className={'form box'}>
             <div>
                <input type="text" placeholder={'Name'} {...register('userName')}/>
             </div>
@@ -50,16 +50,25 @@ const ContactForm: FC = () => {
                <input type="text" placeholder={'Email'} {...register('email')}/>
             </div>
             <div>
-               <textarea placeholder={'Message'} {...register('message')}></textarea>
+               <textarea className={'textarea'} placeholder={'Message'} {...register('message')}></textarea>
             </div>
+            {Object.keys(errors).length > 0 &&
+                    <div className={'errorsText'}>{Object.values(errors)[0].message}</div>}
 
-            <div className={'formButton'}>
-               <button disabled={!isValid}>Submit</button>
+
+            <div className={'buttonGit'}>
+               <button disabled={!isValid} onSubmit={handleSubmit(sendEmail)} className={'containerGit button'}>
+                  <span className={'button__line button__line--top'}></span>
+                  <span className={'button__line button__line--right'}></span>
+                  <span className={'button__line button__line--bottom'}></span>
+                  <span className={'button__line button__line--left'}></span>
+                        Submit
+               </button>
             </div>
             {/* If there are more than 0 elements in the error object, we extract the first value from the array of errors. */}
-            {Object.keys(errors).length > 0 && <div>{Object.values(errors)[0].message}</div>}
          </form>
-         {submitStatus && <div>{'You\'re welcome. I will write to you within a day. Thank you.'}</div>}
+         {submitStatus &&
+                <div className={'answerText'}>{'You\'re welcome. I will write to you within a day. Thank you.'}</div>}
       </div>
    );
 };

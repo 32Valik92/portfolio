@@ -1,6 +1,33 @@
-.projects h2{
+.projects {
+    box-sizing: border-box;
+    margin: 60px;
+    padding-bottom: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+
+    /* Gradient Parameters */
+    background-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.5)
+    );
+    /*background-size: cover;*/
+    border-radius: 30px;
+}
+
+.projects h2 {
     text-align: center;
     margin-top: -65px;
-    margin-bottom: -40px;
     padding-top: 85px;
+    font-family: "Book Antiqua", serif;
+}
+
+/* ------------------------- @media ------------------------- */
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+
+    .projects{
+        margin: 30px 10px;
+    }
 }

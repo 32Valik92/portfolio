@@ -2,9 +2,12 @@ import {faGithub, faInstagram, faLinkedin, faTelegram, faThreads} from '@fortawe
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import React, {FC} from 'react';
 
-const HeaderLinks: FC = () => {
+interface IProps {
+    isMenuShow: boolean;
+}
+const HeaderLinks: FC<IProps> = ({isMenuShow}) => {
    return (
-      <ul>
+      <ul className={`linksList ${isMenuShow ? 'show' : 'hidden'}`}>
          <li>
             <a href="https://github.com/32Valik92" target={'_blank'} rel="noreferrer">
                <FontAwesomeIcon icon={faGithub}/>

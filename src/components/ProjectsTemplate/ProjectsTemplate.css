@@ -1,0 +1,290 @@
+.project {
+    box-sizing: border-box;
+    /*border: #00B381 solid 3px;*/
+    padding: 40px 0;
+    margin: 20px 60px 60px 60px;
+    background-image: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+    );
+    border-radius: 30px;
+}
+
+.projectImgAndList {
+    /*border: red solid 3px;*/
+    box-sizing: border-box;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projectImg {
+    box-sizing: border-box;
+    /*border: blue solid 3px;*/
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.projectImg img {
+    width: 600px;
+    transition: transform 1s ease; /* transform - applying transformation, ease - smooth start and end of animation */
+}
+
+.titleAndTechno {
+    box-sizing: border-box;
+    width: 350px;
+    /*border: #00B381 solid 3px;*/
+}
+
+.listTechnologies {
+    box-sizing: border-box;
+}
+
+.listTechnologies ul {
+    margin: 0 auto;
+}
+
+.list {
+    box-sizing: border-box;
+    /*border: green solid 3px;*/
+    margin: 50px 0 0 50px
+}
+
+.list li {
+    margin-top: 10px;
+}
+
+.listTechnologies ul {
+    list-style-type: none;
+}
+
+.listTechnologies ul li::before {
+    content: "\2713";
+    margin-right: 0.5em;
+}
+
+/* Overlay class */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Algerian, serif;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.projectImg:hover {
+    box-shadow: 0 0 10px white, 0 0 40px white;
+}
+
+.projectImg:hover img {
+    transform: scale(1.2);
+}
+
+.projectImg:hover .overlay {
+    opacity: 1;
+}
+
+.movieDbInfo {
+    box-sizing: border-box;
+    /*border: green solid 6px;*/
+}
+
+/* -------------------------------------- Button --------------------------------------*/
+
+.buttonGit {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Consolas, serif;
+}
+
+.containerGit {
+    position: relative;
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    text-text-replace: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: #00008B;
+    cursor: pointer;
+}
+
+.button__line {
+    position: absolute;
+    display: block;
+}
+
+/* top */
+.button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, white);
+}
+
+.button:hover .button__line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+/* bottom */
+.button__line--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, white);
+}
+
+.containerGit:hover .button__line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+/* left */
+.button__line--left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, white);
+}
+
+.containerGit:hover .button__line--left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+/* right */
+.button__line--right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, white);
+}
+
+.containerGit:hover .button__line--right {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.containerGit:hover {
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80px white;
+    background-color: white;
+    transition-delay: 0.6s;
+    color: #00008B;
+}
+
+/* ------------------------- @media ------------------------- */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    .project {
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    .projectImgAndList {
+        height: 300px;
+    }
+
+    .projectImg {
+        height: 300px;
+        width: 400px;
+    }
+
+    .projectImg img {
+        width: 400px;
+        /*height: 250px;*/
+    }
+
+    .overlay {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .project {
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    .projectImgAndList {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+    }
+
+    .projectImg {
+        height: 300px;
+        width: 400px;
+    }
+
+    .projectImg img {
+        width: 400px;
+        /*height: 250px;*/
+    }
+
+    .overlay {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+
+    .project {
+        font-size: 14px;
+        margin: 20px;
+    }
+
+    .projectImgAndList {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+    }
+
+    .projectImg {
+        height: auto;
+        width: 300px;
+    }
+
+    .projectImg img {
+        width: 300px;
+    }
+
+    .overlay {
+        height: 150px;
+    }
+
+    .titleAndTechno {
+        width: 100%;
+    }
+}

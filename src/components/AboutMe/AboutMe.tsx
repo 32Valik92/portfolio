@@ -9,7 +9,7 @@ import {abutMe, myExpansions} from '../../constants';
 const AboutMe: FC = () => {
    return (
       <div className={'aboutME'}>
-         <h2 id={'aboutMe'}>About Me</h2>
+         <h2 id={'aboutMe'}>ABOUT ME</h2>
 
          <div className={'textAboutME'}>
             <p>
