@@ -34,7 +34,7 @@ const HeaderLinks: FC<IProps> = ({isMenuShow}) => {
          </li>
 
          <li>
-            <a href="https://github.com/32Valik92" target={'_blank'} rel="noreferrer">
+            <a href="https://www.threads.net/@strukkalo" target={'_blank'} rel="noreferrer">
                <FontAwesomeIcon icon={faThreads}/>
             </a>
          </li>
