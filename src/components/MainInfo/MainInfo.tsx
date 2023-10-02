@@ -2,7 +2,7 @@ import './MainInfo.css';
 
 import React, {FC} from 'react';
 
-import {movieDB} from '../../constants';
+import {movieDB, superHeroesInfo} from '../../constants';
 import {AboutMe} from '../AboutMe/AboutMe';
 import {ContactForm} from '../ContactForm/ContactForm';
 import {Phrase} from '../Phrase/Phrase';
@@ -21,6 +21,7 @@ const MainInfo: FC = () => {
          <div className={'projects'}>
             <h2 id={'projects'}>PROJECTS</h2>
             <ProjectsTemplate projectInfo={movieDB} key={1}/>
+            <ProjectsTemplate projectInfo={superHeroesInfo} key={2}/>
          </div>
          <ContactForm/>
       </div>
