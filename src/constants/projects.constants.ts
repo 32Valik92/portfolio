@@ -20,7 +20,7 @@ const superHeroesInfo = {
    projectSite: superHeroes.superHeroesSite,
    img: superHeroesImg,
    alt: 'superHeroes',
-   title: 'Super Heroes WebSite',
+   title: 'Super Heroes WebSite(Frond + Back)',
    listTechnologies: ['HTML', 'CSS', 'React.js', 'Typescript', 'Redux Toolkit', 'Git', 'NPM', 'NodeJs', 'Express', 'MongoDb'],
    gitHub: superHeroes.superHeroesGitHub,
    info: [
