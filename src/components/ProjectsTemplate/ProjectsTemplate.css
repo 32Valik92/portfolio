@@ -15,7 +15,7 @@
 .projectImgAndList {
     /*border: red solid 3px;*/
     box-sizing: border-box;
-    height: 400px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -102,6 +102,10 @@
 .movieDbInfo {
     box-sizing: border-box;
     /*border: green solid 6px;*/
+}
+
+.movieDbInfo li {
+    margin: 10px 0;
 }
 
 /* -------------------------------------- Button --------------------------------------*/
@@ -209,10 +213,6 @@
         margin: 20px;
     }
 
-    .projectImgAndList {
-        height: 300px;
-    }
-
     .projectImg {
         height: 300px;
         width: 400px;
@@ -239,7 +239,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 600px;
     }
 
     .projectImg {
@@ -268,7 +267,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 450px;
     }
 
     .projectImg {
