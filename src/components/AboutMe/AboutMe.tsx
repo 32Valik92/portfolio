@@ -18,6 +18,7 @@ const AboutMe: FC = () => {
                {myExpansions}
             </p>
 
+
             <div className={'divIcon'}>
                <FontAwesomeIcon icon={faScroll} className={'icon'}/>
             </div>
