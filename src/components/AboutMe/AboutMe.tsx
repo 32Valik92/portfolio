@@ -7,27 +7,27 @@ import React, {FC} from 'react';
 import {abutMe, myExpansions} from '../../constants';
 
 const AboutMe: FC = () => {
-    return (
-        <div className={'aboutME'}>
-            <h2 id={'aboutMe'}>ABOUT ME</h2>
+   return (
+      <div className={'aboutME'}>
+         <h2 id={'aboutMe'}>ABOUT ME</h2>
 
-            <div className={'textAboutME'}>
-                <p>
-                    {abutMe}
-                    <br/><br/>
-                    {myExpansions}
-                </p>
+         <div className={'textAboutME'}>
+            <p>
+               {abutMe}
+               <br/><br/>
+               {myExpansions}
+            </p>
 
-                <a href="tel:+380997140955">380997140955</a>
+            <a href="tel:+380997140955">380997140955</a>
 
-                <div className={'divIcon'}>
-                    <FontAwesomeIcon icon={faScroll} className={'icon'}/>
-                </div>
-
+            <div className={'divIcon'}>
+               <FontAwesomeIcon icon={faScroll} className={'icon'}/>
             </div>
 
-        </div>
-    );
+         </div>
+
+      </div>
+   );
 };
 
 export {AboutMe};
