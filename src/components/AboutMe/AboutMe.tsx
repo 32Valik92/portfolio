@@ -18,8 +18,6 @@ const AboutMe: FC = () => {
                {myExpansions}
             </p>
 
-            <a href="tel:+380997140955">380997140955</a>
-
             <div className={'divIcon'}>
                <FontAwesomeIcon icon={faScroll} className={'icon'}/>
             </div>
