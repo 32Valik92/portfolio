@@ -3,4 +3,5 @@ export { default as movie1Img } from './images/movieProject/movie1.png';
 export { default as nodeImg } from './images/skills/node.png';
 export { default as reduxImg } from './images/skills/redux.png';
 export { default as superHeroesImg } from './images/superHeroes/SuperHeroes.png';
+export { default as WordsAPIFormImg } from './images/WordsAPIForm/WordsAPIForm.png';
 export { default as wallImg } from './images/wall.jpg';

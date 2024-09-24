@@ -1,5 +1,5 @@
-import {movie1Img, superHeroesImg} from '../assets';
-import {movieDBSite, movieGitHub, superHeroes} from './links.constants';
+import {movie1Img, superHeroesImg, WordsAPIFormImg} from '../assets';
+import {movieDBSite, movieGitHub, superHeroesLinks, WordsAPIFormLinks} from './links.constants';
 
 const movieDB = {
    projectSite: movieDBSite,
@@ -17,12 +17,12 @@ const movieDB = {
 };
 
 const superHeroesInfo = {
-   projectSite: superHeroes.superHeroesSite,
+   projectSite: superHeroesLinks.superHeroesSite,
    img: superHeroesImg,
    alt: 'superHeroes',
    title: 'Super Heroes WebSite (Frond + Back)',
    listTechnologies: ['HTML', 'CSS', 'React.js', 'Typescript', 'Redux Toolkit', 'Git', 'NPM', 'NodeJs', 'Express', 'MongoDb'],
-   gitHub: superHeroes.superHeroesGitHub,
+   gitHub: superHeroesLinks.superHeroesGitHub,
    info: [
       {'React': 'I used various libraries and hooks for convenient website development.'},
       {'Redux Toolkit': 'It was necessary to create different slices and facilitate state management.'},
@@ -32,7 +32,24 @@ const superHeroesInfo = {
    ]
 };
 
+const WordsAPIFormInfo = {
+   projectSite: WordsAPIFormLinks.WordsAPIFormSite,
+   img: WordsAPIFormImg,
+   alt: 'WordsAPIForm',
+   title: 'Words API Form',
+   listTechnologies: ['HTML', 'CSS', 'Next.js', 'TypeScript', 'Git', 'NPM', 'WordsAPI'],
+   gitHub: WordsAPIFormLinks.WordsAPIFormGitHub,
+   info: [
+      {'Next.js': 'This is my first project using Next.js, focusing on server-side rendering and API routes.'},
+      {'TypeScript': 'I utilized TypeScript to ensure strict typing and avoid issues with different data types.'},
+      {'WordsAPI': 'I integrated WordsAPI to fetch and display word information dynamically.'},
+      {'ESLint': 'I configured ESLint for static code analysis to enforce best coding practices.'},
+   ]
+};
+
+
 export {
    movieDB,
-   superHeroesInfo
+   superHeroesInfo,
+   WordsAPIFormInfo
 };
